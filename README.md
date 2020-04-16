@@ -79,7 +79,7 @@ network:
                 "无线SID":
                   password: "无线密码"
 ```
-
+# 系统操作
 + windows 10 操作
   + 远程SSH登陆
   + 执行命令：`ssh ubuntu@192.168.1.101`
@@ -105,6 +105,16 @@ network:
   + `export PATH=$PATH:$HOME/dotnet`
   + 保存，重启命令：`reboot`
   + 重启完毕，执行：`dotnet --version` 查看dotnet版本
+
+# 远程调试
++ 新建.NET CORE 3.1 控制台项目
+  + 在win10下Visual Studio 2019下，工具---选项---跨平台---连接管理器---添加ssh
+  + 使用远程复制命令复制源代码和项目文件到ubuntu下
+  + ubuntu,新建文件夹命令：`mkdir helloworld` ,权限命令：`sudo chmod 755 ./helloworld`
+  + 执行命令：`dotnet restore`,`dotnet build`,`dotnet run`,程序运行。
+  + 在win10下Visual Studio 2019下，打断点,调试---附加到进程---连接类型---ssh---连接目标---192.168.1.101---附加到---托管(.NET Core for Unix) 代码---helloworld
+  + 这里有点复杂，多试几次就可以了。
+  + **注意**：需要源码在ubuntu上，才能远程调试，（大坑）
 
 + 说明
   + 如有问题请留言。
