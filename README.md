@@ -14,6 +14,7 @@
 
 + Raspberry Pi 4
   + [![](https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png)](https://www.raspberrypi.org "Raspberry Pi 4")
+  + [Raspberry Pi 4](https://www.raspberrypi.org "Raspberry Pi 4")
   + [微雪电子](http://www.waveshare.net "微雪电子")，[BME280](http://www.waveshare.net/shop/BME280-Environmental-Sensor.htm "BME280")
   + 代码说明：[BME280](https://github.com/dotnet/iot/tree/master/src/devices/Bmxx80 "BME280")
   + 视频：[IoT 101](https://channel9.msdn.com/Series/IoT-101 "IoT 101")(视频右下角可以选择中文字幕)
